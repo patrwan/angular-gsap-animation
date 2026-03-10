@@ -1,0 +1,40 @@
+<div class="carousel-container">
+
+    <!-- Slides -->
+    @for(image of images; track image.imageSrc; let i = $index){
+    <div class="slide" [ngClass]="{'slide-active': selectedIndex === i}">
+
+        <!-- Imagen -->
+        <div class="slide-image">
+            <img src={{image.imageSrc}} alt="" class="image-active">
+        </div>
+
+        <!-- Texto -->
+        <div class="slide-text">
+            <h3 class="text-lg font-bold" [ngClass]="{'title-active': selectedIndex === i}">
+                Vino ejemplo
+            </h3>
+            <p class="text-gray-800" [ngClass]="{'description-active': selectedIndex === i}">
+                Descripción del vino Descripción del vino Descripción del vino Descripción del vino Descripción del vino
+            </p>
+        </div>
+
+    </div>
+    }
+
+    <!-- Puntos del carousel -->
+    <div class="carousel-dot-container">
+        @for(dot of images; track dot.imageSrc; let i = $index){
+        <span class="dot" [ngClass]="{'active': selectedIndex === i}" (click)="selectImage(i)"></span>
+        }
+    </div>
+
+    <!-- Botones -->
+    <button class="btn-carousel btn-prev" (click)="onPrevClick()">
+        <i class="fas fa-arrow-circle-left icon-carousel icon-prev"></i>
+    </button>
+    <button class="btn-carousel btn-next" (click)="onNextClick()">
+        <i class="fas fa-arrow-circle-right icon-carousel icon-next"></i>
+    </button>
+
+</div>

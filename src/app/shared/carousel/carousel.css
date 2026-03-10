@@ -1,0 +1,114 @@
+/* Contenedor principal */
+.carousel-container {
+    width: 380px;
+    height: 650px;
+    /* altura total fija */
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px #dce1e1;
+}
+
+/* Slides: ocupan todo el contenedor, se apilan */
+.slide {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+
+    display: flex;
+    /* activa flex dentro del contenedor */
+    justify-content: center;
+    /* centra horizontalmente */
+    align-items: center;
+    /* centra verticalmente (opcional, si la imagen no llena toda la altura) */
+}
+
+/* Slide activo */
+.slide-active {
+    opacity: 1;
+    position: relative;
+}
+
+/* Imagen ocupa 3/4 */
+.slide-image {
+    flex: 3;
+    overflow: hidden;
+}
+
+/* Imagen siempre llena su contenedor */
+.slide-image img {
+    width: 300px;
+    height: 100%;
+    object-fit: cover;
+    /* escala sin deformar */
+}
+
+/* Texto ocupa 1/4 */
+.slide-text {
+    flex: 1;
+    padding: 1rem;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* Opcional: animar aparición del texto */
+.title,
+.description {
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.title-active,
+.description-active {
+    opacity: 1;
+}
+
+/* Puntos del carousel */
+.carousel-dot-container {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 4px;
+    border-radius: 50%;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #333;
+}
+
+/* Botones */
+.btn-carousel {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-prev {
+    left: 10px;
+}
+
+.btn-next {
+    right: 10px;
+}
+
+.icon-carousel {
+    font-size: 24px;
+    color: #333;
+}

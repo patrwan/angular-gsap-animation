@@ -1,0 +1,30 @@
+<nav class="hidden text-white  fixed w-full top-0 h-24 z-20 items-center md:flex justify-center bg-black/60 nav">
+    <ul class="flex w-72 justify-center text-xl space-x-6 text-white/80 ">
+        <li class="hover:text-white hover:underline underline-offset-10 cursor-pointer ">Historia</li>
+        <li class="hover:text-white hover:underline underline-offset-10 cursor-pointer ">Valores</li>
+    </ul>
+    <h1 class="font-melodrama text-2xl font-medium text-center mx-8">Dufour de Conti</h1>
+    <ul class="flex w-72 justify-center text-xl space-x-6 text-white/80">
+        <li class="hover:text-white hover:underline underline-offset-10 cursor-pointer ">Vinos</li>
+        <li class="hover:text-white hover:underline underline-offset-10 cursor-pointer">Club</li>
+    </ul>
+</nav>
+
+<div class="w-full flex h-26 fixed z-20 text-white items-center justify-center md:hidden bg-black/60 backdrop-blur-2xl">
+    <h1 class="font-melodrama text-2xl font-medium text-center ">Dufour de Conti</h1>
+    <div class="absolute z-20 right-2 h-24 cursor-pointer flex items-center">
+        <img src="menu.svg" alt="" class="w-16 my-auto" (click)="toggleMenu()">
+    </div>
+
+</div>
+
+<nav #menu class="mt-24 top-0 fixed z-20 bg-black/40 text-white/60 backdrop-blur-2xl w-full md:hidden" id="mobile-menu">
+    <ul class="flex flex-col items-center text-lg ">
+        <li class="py-2 hover:text-white cursor-pointer item">Inicio</li>
+        <li class="py-2 hover:text-white cursor-pointer item">Historia</li>
+        <li class="py-2 hover:text-white cursor-pointer item">Nosotros</li>
+        <li class="py-2 hover:text-white cursor-pointer item">Vinos</li>
+        <li class="py-2 hover:text-white cursor-pointer item">Club</li>
+        <li class="py-2 hover:text-white cursor-pointer item">Contáctanos</li>
+    </ul>
+</nav>
