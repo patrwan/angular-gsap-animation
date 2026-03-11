@@ -33,6 +33,7 @@ export class App implements AfterViewInit {
         wrapper: '#smooth-wrapper',
         content: '#smooth-content',
         smooth: 1,
+        smoothTouch: 0.1
       });
 
       const links = document.querySelectorAll('li');
