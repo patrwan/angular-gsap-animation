@@ -44,8 +44,8 @@ export class App implements AfterViewInit {
         }
       })
 
-      const heroSplit = new SplitText('#hero-title', { type: 'chars, words, lines' });
-      const heroSubTtileSplit = new SplitText('#hero-subTitle', { type: 'lines' });
+      /*   const heroSplit = new SplitText('#hero-title', { type: 'chars, words, lines' });
+        const heroSubTtileSplit = new SplitText('#hero-subTitle', { type: 'lines' }); */
 
       gsap.from('#hero-title', {
         yPercent: 0,

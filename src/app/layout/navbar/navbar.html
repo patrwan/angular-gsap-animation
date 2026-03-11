@@ -18,14 +18,12 @@
     <div class="absolute z-30 right-2 h-10  flex items-center ">
         <img src="menu.svg" alt="" class="w-10 h-10  relative z-40" (click)="toggleMenu()">
     </div>
-
+    <nav #menu class="top-18 fixed z-10 bg-black/80 text-white/60 backdrop-blur-2xl w-full md:hidden" id="mobile-menu">
+        <ul class="flex flex-col items-center text-lg " (click)="toggleMenu()">
+            <li class="py-2 hover:text-white cursor-pointer item" id="inicio">Inicio</li>
+            <li class="py-2 hover:text-white cursor-pointer item" id="historia">Nosotros</li>
+            <li class="py-2 hover:text-white cursor-pointer item" id="club">Club</li>
+            <li class="py-2 hover:text-white cursor-pointer item" id="vinos">Vinos</li>
+        </ul>
+    </nav>
 </div>
-
-<nav #menu class="top-18 fixed z-10 bg-black/80 text-white/60 backdrop-blur-2xl w-full md:hidden" id="mobile-menu">
-    <ul class="flex flex-col items-center text-lg ">
-        <li class="py-2 hover:text-white cursor-pointer item" id="inicio">Inicio</li>
-        <li class="py-2 hover:text-white cursor-pointer item" id="historia">Nosotros</li>
-        <li class="py-2 hover:text-white cursor-pointer item" id="club">Club</li>
-        <li class="py-2 hover:text-white cursor-pointer item" id="vinos">Vinos</li>
-    </ul>
-</nav>
