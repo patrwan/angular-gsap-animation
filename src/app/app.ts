@@ -47,24 +47,30 @@ export class App implements AfterViewInit {
       const heroSplit = new SplitText('#hero-title', { type: 'chars, words, lines' });
       const heroSubTtileSplit = new SplitText('#hero-subTitle', { type: 'lines' });
 
-      gsap.from(heroSplit.lines, {
+      gsap.from('#hero-title', {
         yPercent: 0,
         ease: 'power4.out',
-        opacity: 0,
-        duration: 1
+        autoAlpha: 0,
+        duration: 4
 
       });
 
-      gsap.from(heroSubTtileSplit.lines, {
+      gsap.from('#hero-subTitle', {
         opacity: 0,
         duration: 2,
-        stagger: 0.05,
-        delay: 0
+        delay: 0.2
       });
 
       gsap.from('#hero-button', {
         opacity: 0,
         y: 10,
+        delay: 0.5,
+        clearProps: "transform"
+      })
+
+      gsap.from('.nav', {
+        opacity: 0,
+        translateY: - 10,
         delay: 0.5,
         clearProps: "transform"
       })
