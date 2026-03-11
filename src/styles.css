@@ -11,7 +11,7 @@
 @theme {
     --font-neuton: "Neuton", serif;
     --font-body: "Raleway", sans-serif;
-    --font-melodrama: "Melodrama";
+    --font-melodrama: "Melodrama", sans-serif;
 }
 
 html,
