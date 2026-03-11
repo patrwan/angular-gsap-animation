@@ -105,12 +105,13 @@ export class App implements AfterViewInit {
       translateX: '100',
       autoAlpha: 0,
       ease: 'power4.out',
+      duration: 2,
 
       scrollTrigger: {
-        //markers: true,
+        markers: true,
         //scrub: 3,
         trigger: '.mission',
-        start: 'top-=400 center',
+        start: 'top-=100 center',
         end: '+=300',
 
       }
@@ -120,12 +121,12 @@ export class App implements AfterViewInit {
       translateX: '-100',
       autoAlpha: 0,
       ease: 'power4.out',
-
+      duration: 2,
       scrollTrigger: {
         //markers: true,
         //scrub: 3,
         trigger: '.vission',
-        start: 'top-=400 center',
+        start: 'top-=100 center',
         end: '+=300',
 
       }
@@ -135,8 +136,8 @@ export class App implements AfterViewInit {
       translateY: '100',
       autoAlpha: 0,
       ease: 'power1.out',
-      duration: 0.6,
-      stagger: 0.25,
+      duration: 0.7,
+      stagger: 0.30,
 
       scrollTrigger: {
         //markers: true,
