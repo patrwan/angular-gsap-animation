@@ -73,7 +73,23 @@ export class App implements AfterViewInit {
         translateY: - 10,
         delay: 0.5,
         clearProps: "transform"
-      })
+      });
+
+      ScrollTrigger.create({
+        start: "top -10",
+        onEnter: () => {
+          gsap.to("nav", {
+            backgroundColor: "#000",
+            duration: 0.6
+          });
+        },
+        onLeaveBack: () => {
+          gsap.to(".nav", {
+            backgroundColor: "transparent",
+            duration: 0.8
+          });
+        }
+      });
 
 
 
@@ -114,10 +130,10 @@ export class App implements AfterViewInit {
       duration: 2,
 
       scrollTrigger: {
-        //markers: true,
+        markers: true,
         //scrub: 3,
         trigger: '.mission',
-        start: 'top-=100 center',
+        start: 'top-=150 center',
         end: '+=300',
 
       }
@@ -306,7 +322,9 @@ export class App implements AfterViewInit {
 
 
 
-
+  scrollButton() {
+    this.smoother.scrollTo("#historia1", true, "top");
+  }
 
   scroll() {
     gsap.to(this.smoother, {
