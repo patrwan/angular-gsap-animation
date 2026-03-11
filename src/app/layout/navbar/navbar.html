@@ -1,12 +1,14 @@
 <nav class="hidden text-white  fixed w-full top-0 h-24 z-20 items-center md:flex justify-center bg-black/60 nav">
     <ul class="flex w-72 justify-center text-xl space-x-6 text-white/80 ">
-        <li class="hover:text-white hover:underline underline-offset-10 cursor-pointer ">Historia</li>
-        <li class="hover:text-white hover:underline underline-offset-10 cursor-pointer ">Valores</li>
+        <li class="hover:text-white hover:underline underline-offset-10 cursor-pointer " id="historia">Historia</li>
+        <li class="hover:text-white hover:underline underline-offset-10 cursor-pointer " id="valores">Valores</li>
     </ul>
-    <h1 class="font-melodrama text-2xl font-medium text-center mx-8">Dufour de Conti</h1>
+    <li class="font-melodrama text-2xl font-medium text-center mx-8 cursor-pointer list-none" id="inicio">Dufour de
+        Conti</li>
     <ul class="flex w-72 justify-center text-xl space-x-6 text-white/80">
-        <li class="hover:text-white hover:underline underline-offset-10 cursor-pointer ">Vinos</li>
-        <li class="hover:text-white hover:underline underline-offset-10 cursor-pointer">Club</li>
+        <li class="hover:text-white hover:underline underline-offset-10 cursor-pointer" id="club">Club</li>
+        <li class="hover:text-white hover:underline underline-offset-10 cursor-pointer " id="vinos">Vinos</li>
+
     </ul>
 </nav>
 
@@ -20,11 +22,9 @@
 
 <nav #menu class="mt-24 top-0 fixed z-20 bg-black/40 text-white/60 backdrop-blur-2xl w-full md:hidden" id="mobile-menu">
     <ul class="flex flex-col items-center text-lg ">
-        <li class="py-2 hover:text-white cursor-pointer item">Inicio</li>
-        <li class="py-2 hover:text-white cursor-pointer item">Historia</li>
-        <li class="py-2 hover:text-white cursor-pointer item">Nosotros</li>
-        <li class="py-2 hover:text-white cursor-pointer item">Vinos</li>
-        <li class="py-2 hover:text-white cursor-pointer item">Club</li>
-        <li class="py-2 hover:text-white cursor-pointer item">Contáctanos</li>
+        <li class="py-2 hover:text-white cursor-pointer item" id="inicio">Inicio</li>
+        <li class="py-2 hover:text-white cursor-pointer item" id="historia">Nosotros</li>
+        <li class="py-2 hover:text-white cursor-pointer item" id="club">Club</li>
+        <li class="py-2 hover:text-white cursor-pointer item" id="vinos">Vinos</li>
     </ul>
 </nav>

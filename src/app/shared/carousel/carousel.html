@@ -1,7 +1,7 @@
 <div class="carousel-container">
 
     <!-- Slides -->
-    @for(image of images; track image.imageSrc; let i = $index){
+    @for(image of images; track image.id; let i = $index){
     <div class="slide" [ngClass]="{'slide-active': selectedIndex === i}">
 
         <!-- Imagen -->
@@ -11,11 +11,11 @@
 
         <!-- Texto -->
         <div class="slide-text">
-            <h3 class="text-lg font-bold" [ngClass]="{'title-active': selectedIndex === i}">
-                Vino ejemplo
+            <h3 class="text-lg font-bold text-black" [ngClass]="{'title-active': selectedIndex === i}">
+                {{image.title}}
             </h3>
             <p class="text-gray-800" [ngClass]="{'description-active': selectedIndex === i}">
-                Descripción del vino Descripción del vino Descripción del vino Descripción del vino Descripción del vino
+                {{image.description}}
             </p>
         </div>
 
@@ -24,7 +24,7 @@
 
     <!-- Puntos del carousel -->
     <div class="carousel-dot-container">
-        @for(dot of images; track dot.imageSrc; let i = $index){
+        @for(dot of images; track dot.id; let i = $index){
         <span class="dot" [ngClass]="{'active': selectedIndex === i}" (click)="selectImage(i)"></span>
         }
     </div>
@@ -32,9 +32,11 @@
     <!-- Botones -->
     <button class="btn-carousel btn-prev" (click)="onPrevClick()">
         <i class="fas fa-arrow-circle-left icon-carousel icon-prev"></i>
+        <img src="arrow_left.svg" alt="" class="h-12">
     </button>
     <button class="btn-carousel btn-next" (click)="onNextClick()">
         <i class="fas fa-arrow-circle-right icon-carousel icon-next"></i>
+        <img src="arrow_right.svg" alt="" class="h-12">
     </button>
 
 </div>

@@ -1,5 +1,6 @@
-<section class="w-full md:px-32 grid  text-center place-content-center space-y-3  py-12 " id="wines">
-    <h2 class="flex items-center">
+<section class="w-full h-dvh md:px-32 grid  text-center place-content-center space-y-3  py-12 lg: product-container"
+    id="vinos1">
+    <h2 class="flex items-center mb-20">
         <span class="h-px flex-1 bg-linear-to-r from-transparent to-rose-300"></span>
 
         <span class="shrink-0 px-4 text-3xl  font-body text-rose-800 text-center">Nuestros Vinos</span>
@@ -7,7 +8,7 @@
         <span class="h-px flex-1 bg-linear-to-l from-transparent to-rose-300"></span>
     </h2>
 
-    <div class="w-full md:grid place-items-center self-center p-4 hidden md:w-3xl lg:w-full">
+    <!-- <div class="w-full md:grid place-items-center self-center p-4 hidden md:w-3xl lg:w-full">
         <img src="wine_example.png" alt="" class="w-42 ">
         <h3 class="text-2xl font-bold text-black">Vino ejemplo</h3>
         <p class="text-slate-600 font-light mt-2 w-96 text-balance">
@@ -15,10 +16,11 @@
             Presenta aromas de frutos negros, cacao y suaves notas especiadas.
             En boca es equilibrado, con taninos sedosos y un final largo y persistente.
         </p>
-    </div>
+    </div> -->
     <app-carousel class="md:hidden" />
-    <div class="md:flex md:w-3xl lg:w-full justify-center hidden text-black">
-        <div class="flex w-[266px] flex-col  p-2  items-center cursor-pointer hover:shadow-2xl">
+    <!-- <div class="md:flex md:w-3xl lg:w-full justify-center hidden text-black">
+        <div
+            class="flex w-[266px] flex-col  p-2  items-center cursor-pointer hover:shadow-2xl hover:bg-emerald-300 duration-600 transition-all">
             <img src="wine_example.png" alt="" class="w-32 hover:scale-110 transition-all">
             <h3 class="font-medium text-lg">Vino ejemplo 1</h3>
         </div>
@@ -43,6 +45,68 @@
             <h3 class="font-medium">Vino ejemplo 5</h3>
         </div>
 
+    </div> -->
+
+    <div class="md:flex md:w-3xl lg:w-full justify-center hidden  text-black space-x-2 product-container">
+        <div class="product-item">
+            <div
+                class="flex w-66.5 h-157.5 flex-col  p-2  items-center cursor-pointer hover:shadow-2xl hover:bg-cyan-300 duration-600 transition-all">
+                <img src="wine_example.png" alt="" class="w-64 hover:scale-110 transition-all">
+                <h3 class=" text-2xl uppercase text-white font-neuton">Vino ejemplo 1</h3>
+                <!-- <button class="mt-6">Ver Más</button> -->
+            </div>
+        </div>
+
+        <div class="product-item-2">
+            <div
+                class="flex w-66.5 h-157.5 flex-col  p-2  items-center cursor-pointer hover:shadow-2xl hover:bg-white duration-600 transition-all">
+                <img src="wine_example.png" alt="" class="w-64 hover:scale-110 transition-all">
+                <h3 class="font-bold text-2xl uppercase font-neuton">Vino ejemplo 2</h3>
+                <!-- <button class="mt-6">Ver Más</button> -->
+            </div>
+        </div>
+
+        <div class="product-item-3">
+            <div
+                class="flex w-66.5 h-157.5 flex-col  p-2  items-center cursor-pointer hover:shadow-2xl hover:bg-rose-600 duration-600 transition-all">
+                <img src="wine_example.png" alt="" class="w-64 hover:scale-110 transition-all">
+                <h3 class="font-bold text-2xl uppercase text-white font-neuton">Vino ejemplo 3</h3>
+                <!-- <button class="mt-6">Ver Más</button> -->
+            </div>
+        </div>
     </div>
+
+    <!--     <div class="md:flex md:w-3xl lg:w-full justify-center hidden  text-black space-x-2">
+        <div class=" w-full relative group">
+            <div class=" absolute h-1/2 w-full z-0 top-0 group-hover:bg-cyan-600 product-item-4-a"></div>
+            <div class=" absolute h-1/2 w-full z-0 bottom-0 group-hover:bg-cyan-600 product-item-4-b"></div>
+            <div
+                class="flex w-66.5 h-157.5 flex-col  p-2  items-center cursor-pointer hover:shadow-2xl relative pointer-events-none">
+                <img src="wine_example.png" alt="" class="w-64 hover:scale-110 transition-all">
+                <h3 class="font-medium text-lg uppercase text-white">Vino ejemplo 1</h3>
+                <button class="mt-6 text-white">Ver Más</button>
+            </div>
+        </div>
+
+        <div class=" relative">
+            <div class=" absolute h-1/2 w-full z-0 bottom-0 product-item-5"></div>
+            <div
+                class="flex w-66.5 h-157.5 flex-col  p-2  items-center cursor-pointer hover:shadow-2xl  duration-600 transition-all relative">
+                <img src="wine_example.png" alt="" class="w-64 hover:scale-110 transition-all">
+                <h3 class="font-medium text-lg uppercase text-white">Vino ejemplo 1</h3>
+                <button class="mt-6 text-white">Ver Más</button>
+            </div>
+        </div>
+
+        <div class=" relative">
+            <div class=" absolute h-1/2 w-full z-0 bottom-0 product-item-6"></div>
+            <div
+                class="flex w-66.5 h-157.5 flex-col  p-2  items-center cursor-pointer hover:shadow-2xl  duration-600 transition-all relative ">
+                <img src="wine_example.png" alt="" class="w-64 hover:scale-110 transition-all">
+                <h3 class="font-medium text-lg uppercase text-white">Vino ejemplo 1</h3>
+                <button class="mt-6 text-white">Ver Más</button>
+            </div>
+        </div>
+    </div> -->
 
 </section>

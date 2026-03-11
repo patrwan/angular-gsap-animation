@@ -35,6 +35,15 @@ export class App implements AfterViewInit {
         smooth: 1,
       });
 
+      const links = document.querySelectorAll('li');
+
+      links.forEach(link => {
+
+        link.onclick = () => {
+          this.smoother.scrollTo("#" + link.id + '1', true, "top");
+        }
+      })
+
       const heroSplit = new SplitText('#hero-title', { type: 'chars, words, lines' });
       const heroSubTtileSplit = new SplitText('#hero-subTitle', { type: 'lines' });
 
@@ -66,39 +75,178 @@ export class App implements AfterViewInit {
 
     const tl = gsap.timeline({
       scrollTrigger: {
-        trigger: "#history",
-        start: "top center",
-        end: "+=200",
-        markers: true,
+        trigger: "#historia1",
+        start: "top-=100 center",
+        end: "+=100",
+        //markers: false,
         pin: false,
-        scrub: 5
+        //scrub: 5
       }
     });
 
     tl.from('#history-title', {
       y: -100,
-      opacity: 0,
+      autoAlpha: 0,
     })
       .from('#history-text', {
         x: 100,
-        opacity: 0,
+        autoAlpha: 0,
 
       }).from('.text', {
         x: 50,
-        opacity: 0,
+        autoAlpha: 0,
 
-      })
+      });
     //.set("#history-title", { display: "none" })
     //.set(".history-image", { display: "block" })
-
     //.to({}, { duration: 15 });;
 
-    let sections = gsap.utils.toArray(".panel");
+    gsap.from('.mission', {
+      translateX: '100',
+      autoAlpha: 0,
+      ease: 'power4.out',
 
-    const container = gsap.timeline({
+      scrollTrigger: {
+        //markers: true,
+        //scrub: 3,
+        trigger: '.mission',
+        start: 'top-=400 center',
+        end: '+=300',
 
+      }
     });
 
+    gsap.from('.vission', {
+      translateX: '-100',
+      autoAlpha: 0,
+      ease: 'power4.out',
+
+      scrollTrigger: {
+        //markers: true,
+        //scrub: 3,
+        trigger: '.vission',
+        start: 'top-=400 center',
+        end: '+=300',
+
+      }
+    });
+
+    gsap.from('.value-item', {
+      translateY: '100',
+      autoAlpha: 0,
+      ease: 'power1.out',
+      duration: 0.6,
+      stagger: 0.25,
+
+      scrollTrigger: {
+        //markers: true,
+        //scrub: 3,
+        trigger: '.value-container',
+        start: 'top center',
+        end: '+=150',
+
+      }
+    });
+
+    gsap.from('.product-container', {
+      translateY: '100',
+      autoAlpha: 0,
+      ease: 'power1.out',
+      duration: 1,
+
+      scrollTrigger: {
+        //markers: true,
+        //scrub: 3,
+        trigger: '.product-container',
+        start: 'top-=200 center',
+        end: '+=150',
+
+      }
+    });
+
+    const tl_products = gsap.timeline({
+      paused: true,
+      scrollTrigger: {
+        trigger: ".product-container",
+        start: "center-=300 center",
+        end: "=+200",
+        //markers: true,
+      }
+    });
+
+    tl_products.to('.product-item', {
+      backgroundColor: '#00b8db',
+      duration: 0.5,
+      ease: 'power3.in',
+
+    })
+      .to('.product-item-2', {
+        backgroundColor: '#fff',
+        duration: 0.5,
+      })
+      .to('.product-item-3', {
+        backgroundColor: '#ff2056',
+        duration: 0.5,
+      });
+
+    /*  const tl_products_2 = gsap.timeline({
+       paused: true,
+       scrollTrigger: {
+         trigger: ".product-container",
+         start: "center+=150 center",
+         end: "=+100",
+         markers: true,
+ 
+       }
+     });
+ 
+     tl_products_2.to('.product-item-4-a', {
+       backgroundColor: '#00b8db',
+       duration: 0.5,
+       ease: 'power3.in',
+       clearProps: ""
+ 
+     }, 0)
+       .to('.product-item-4-b', {
+         backgroundColor: '#ff2056',
+         duration: 0.5,
+         ease: 'power3.in'
+       }, 0)
+ 
+       .to('.product-item-5', {
+         backgroundColor: '#ff2056',
+         duration: 0.5,
+       })
+       .to('.product-item-6', {
+         backgroundColor: '#ff2056',
+         duration: 0.5,
+       }); */
+
+    /* gsap.from('.product-item', {
+      translateY: '200',
+      autoAlpha: 0,
+      ease: 'power1.out',
+      duration: 1,
+      onUpdate: () => {
+        console.log('sisisis')
+      },
+
+      scrollTrigger: {
+        markers: true,
+        scrub: 1,
+        trigger: '.product-container',
+        start: 'top center',
+        end: '+=150',
+        onEnter: () => {
+          console.log("hola")
+        }
+
+      }
+    }); */
+
+    /* let sections = gsap.utils.toArray(".panel");
+    const container = gsap.timeline({});
+ */
 
     /* gsap.to(sections, {
       xPercent: -100 * (sections.length - 1),
