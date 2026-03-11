@@ -114,7 +114,7 @@ export class App implements AfterViewInit {
       duration: 2,
 
       scrollTrigger: {
-        markers: true,
+        //markers: true,
         //scrub: 3,
         trigger: '.mission',
         start: 'top-=100 center',
