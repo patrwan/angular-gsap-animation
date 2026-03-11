@@ -78,7 +78,7 @@ export class App implements AfterViewInit {
       ScrollTrigger.create({
         start: "top -10",
         onEnter: () => {
-          gsap.to("nav", {
+          gsap.to(".nav", {
             backgroundColor: "#000",
             duration: 0.6
           });
