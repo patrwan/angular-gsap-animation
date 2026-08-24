@@ -1,11 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 
 @font-face {
     font-family: 'Melodrama';
-    src: url('assets/fonts/Melodrama-Variable.ttf') format('woff2');
+    src: url('assets/fonts/Melodrama-Variable.woff2') format('woff2');
     font-weight: 100 900;
     font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('assets/fonts/raleway-v37-latin-regular.woff2') format('woff2');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neuton';
+    src: url('assets/fonts/neuton-v24-latin-regular.woff2') format('woff2');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
 }
 
 @theme {
