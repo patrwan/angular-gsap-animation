@@ -1,4 +1,4 @@
-import { Component, ElementRef, ViewChild, AfterViewInit, OnDestroy } from '@angular/core';
+import { Component, ElementRef, ViewChild, AfterViewInit, OnDestroy, HostListener } from '@angular/core';
 import { gsap } from "gsap";
 
 @Component({
@@ -14,6 +14,13 @@ export class Navbar implements AfterViewInit {
   tl!: GSAPTimeline;
   open = false;
 
+  @HostListener('window:scroll', [])
+  onWindowScroll(): void {
+    if (this.open) {
+      this.open ? this.tl.reverse() : this.tl.play();
+      this.open = !this.open;
+    }
+  }
   ngAfterViewInit(): void {
     this.ctx = gsap.context((self) => {
 
