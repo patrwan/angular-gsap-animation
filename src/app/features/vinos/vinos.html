@@ -1,5 +1,24 @@
 <app-navbar />
 
-<section class="mt-30 text-black">
-    <p>vinos works! ID: {{id}}</p>
+<section class="mt-30 text-black grid grid-cols-2 bg-amber-300">
+
+
+    <div class="bg-blue-200">
+        <p>Maison</p>
+        <h2>{{wineDetail?.name}}</h2>
+
+        <p>
+            La Viña Philippe de Conti leal a la tradición de excelencia y d
+            e una fineza que fué inculcada por sus antepasados franceses fundadores y
+            haciendo referencia constantemente a esas exigencias, se obliga a la elaboración de un
+            exquisito vino de la mejor calidad, obtenido de una selección manual de las mejores
+            uvas de nuestros viñedos en el Valle de Colchagua. Un vino elegante, fino, delicado y
+            aún así persistente con fuerte personalidad y carácter prolongado,
+            el placer gustativo llevado por su terroir estructurante y sólido.
+        </p>
+    </div>
+
+    <div class="">
+        <img [src]="wineDetail?.detail_image" alt="">
+    </div>
 </section>

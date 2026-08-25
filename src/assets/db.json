@@ -5,7 +5,7 @@
         "short_name": "Premier Cru",
         "description": "La Viña Philippe de Conti leal a la tradición de excelencia y de una fineza que fué inculcada por sus antepasados franceses fundadores y haciendo referencia constantemente a esas exigencias, se obliga a la elaboración de un exquisito vino de la mejor calidad, obtenido de una selección manual de las mejores uvas de nuestros viñedos en el Valle de Colchagua. Un vino elegante, fino, delicado y aún así persistente con fuerte personalidad y carácter prolongado, el placer gustativo llevado por su terroir estructurante y sólido.",
         "image": "wines/wine-premier-cru.webp",
-        "detail_image": "wines/wine-detail-premier-cru.jpeg"
+        "detail_image": "wines/wine-detail-premier-cru.jpg"
     },
     {
         "id": 2,
@@ -13,7 +13,7 @@
         "short_name": "Clos De Conti",
         "description": "La Viña Philippe de Conti leal a la tradición de excelencia y de una fineza que fué inculcada por sus antepasados franceses fundadores y haciendo referencia constantemente a esas exigencias, se obliga a la elaboración de un exquisito vino de la mejor calidad, obtenido de una selección manual de las mejores uvas de nuestros viñedos en el Valle de Colchagua. Un vino elegante, fino, delicado y aún así persistente con fuerte personalidad y carácter prolongado, el placer gustativo llevado por su terroir estructurante y sólido.",
         "image": "wines/wine-closdeconti.webp",
-        "detail_image": "wines/wine-detail-premier-cru.jpeg"
+        "detail_image": "wines/wine-detail-premier-cru.jpg"
     },
     {
         "id": 3,
@@ -21,6 +21,6 @@
         "short_name": "Grand Cru",
         "description": "La Viña Philippe de Conti leal a la tradición de excelencia y de una fineza que fué inculcada por sus antepasados franceses fundadores y haciendo referencia constantemente a esas exigencias, se obliga a la elaboración de un exquisito vino de la mejor calidad, obtenido de una selección manual de las mejores uvas de nuestros viñedos en el Valle de Colchagua. Un vino elegante, fino, delicado y aún así persistente con fuerte personalidad y carácter prolongado, el placer gustativo llevado por su terroir estructurante y sólido.",
         "image": "wines/wine-grand-cru-2.png",
-        "detail_image": "wines/wine-detail-premier-cru.jpeg"
+        "detail_image": "wines/wine-detail-premier-cru.jpg"
     }
 ]

@@ -1,6 +1,7 @@
 import { AfterViewInit, Component, NgZone, signal } from '@angular/core';
 import { Footer } from "../../layout/footer/footer";
 import { FeaturedProducts } from "./components/featured-products/featured-products";
+import { Vineyards } from "./components/vineyards/vineyards";
 import { Navbar } from "../../layout/navbar/navbar";
 
 import { gsap } from "gsap";
@@ -10,7 +11,7 @@ import SplitText from 'gsap/SplitText';
 
 @Component({
   selector: 'app-landing',
-  imports: [Footer, FeaturedProducts, Navbar],
+  imports: [Footer, FeaturedProducts, Vineyards, Navbar],
   templateUrl: './landing.html',
   styleUrl: './landing.css',
 })
