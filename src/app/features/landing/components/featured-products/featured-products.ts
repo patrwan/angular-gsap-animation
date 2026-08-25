@@ -1,11 +1,11 @@
-import { AfterViewInit, Component } from '@angular/core';
+import { AfterViewInit, Component, inject } from '@angular/core';
 import { Carousel } from '../../../../shared/carousel/carousel';
-
+import { Router, RouterLink } from '@angular/router';
 import vinos from '../../../../../assets/db.json';
 
 @Component({
   selector: 'app-featured-products',
-  imports: [Carousel],
+  imports: [Carousel, RouterLink],
   templateUrl: './featured-products.html',
   styleUrl: './featured-products.css',
 })
@@ -30,6 +30,14 @@ export class FeaturedProducts implements AfterViewInit {
 
       }
     }); */
+  }
+
+  private router = inject(Router);
+
+  testNavegacion() {
+    this.router.navigate(['/vinos', 1])
+      .then(ok => console.log('¿Navegó bien?:', ok))
+      .catch(err => console.error('Error fatal al navegar:', err));
   }
 
 }

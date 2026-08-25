@@ -208,14 +208,14 @@ export class Landing implements AfterViewInit {
       ease: 'power3.in',
 
     })
-      .to('.product-item-2', {
-        backgroundColor: '#fff',
-        duration: 0.5,
-      })
-      .to('.product-item-3', {
-        backgroundColor: '#ff2056',
-        duration: 0.5,
-      });
+    /* .to('.product-item-2', {
+      backgroundColor: '#fff',
+      duration: 0.5,
+    })
+    .to('.product-item-3', {
+      backgroundColor: '#ff2056',
+      duration: 0.5,
+    }); */
 
     /*  const tl_products_2 = gsap.timeline({
        paused: true,

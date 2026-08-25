@@ -66,12 +66,14 @@
 
         @for(producto of productos; track producto.id; let i = $index){
         <div class="product-item">
-            <div class="flex w-66.5 h-157.5 p-2 flex-col items-center cursor-pointer hover:shadow-2xl duration-600 transition-all"
-                [class.bg-blue-500]="i === 0" [class.bg-white]="i === 1" [class.bg-red-500]="i === 2">
-                <img [src]="producto.image" alt="" class=" mt-10 w-25 h-100 hover:scale-110 transition-all ">
+            <div class="flex w-66.5 h-157.5 p-2 flex-col items-center " [class.bg-blue-500]="i === 0"
+                [class.bg-white]="i === 1" [class.bg-red-500]="i === 2">
+                <img [src]="producto.image" alt=""
+                    class=" mt-10 w-25 h-100 hover:scale-110 transition-all drop-shadow-[0_0_15px_#fbbf24]"
+                    [class.drop-shadow-[0_0_15px_#fbbf24]]="i === 1">
                 <h3 class="mt-10 text-2xl uppercase font-neuton" [class.text-white]="i !== 1"
                     [class.text-black]="i === 1">{{producto.short_name}}</h3>
-                <!-- <button class="mt-6">Ver Más</button> -->
+                <!-- <a class="mt-6 cursor-pointer" [routerLink]="['/vinos', producto?.id]">Ver Más</a> -->
             </div>
         </div>
         }
