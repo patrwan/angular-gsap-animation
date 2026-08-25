@@ -1,6 +1,8 @@
 import { AfterViewInit, Component } from '@angular/core';
 import { Carousel } from '../../../../shared/carousel/carousel';
 
+import vinos from '../../../../../assets/db.json';
+
 @Component({
   selector: 'app-featured-products',
   imports: [Carousel],
@@ -8,6 +10,8 @@ import { Carousel } from '../../../../shared/carousel/carousel';
   styleUrl: './featured-products.css',
 })
 export class FeaturedProducts implements AfterViewInit {
+
+  productos = vinos;
 
   ngAfterViewInit(): void {
     /* gsap.from('.product-item', {

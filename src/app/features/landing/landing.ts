@@ -39,6 +39,13 @@ export class Landing implements AfterViewInit {
 
         link.onclick = () => {
           this.smoother.scrollTo("#" + link.id + '1', true, "top");
+          const element = document.querySelector("#" + link.id + "1");
+          if (element) {
+            this.smoother.scrollTo(
+              element.getBoundingClientRect().top + this.smoother.scrollTop() - 140,
+              true
+            );
+          }
         }
       })
 
