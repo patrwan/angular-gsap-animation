@@ -1,0 +1,116 @@
+{
+    "nav": {
+        "history": "Historia",
+        "values": "Valores",
+        "club": "Club",
+        "wines": "Vinos",
+        "vineyards": "Viñedos",
+        "contact": "Contacto"
+    },
+    "hero": {
+        "title": "Viña Philippe de Conti",
+        "subtitle": "Donde Francia y Chile se encuentran en una copa",
+        "button": "Descúbrenos"
+    },
+    "history": {
+        "title": "Nuestra Historia",
+        "paragraph1": "En el corazón de Apalta, Santa Cruz, una tierra bañada por el sol y acariciada por los vientos del valle de Colchagua, nace un proyecto único: Dufour de Conti.",
+        "paragraph2": "Fundada por una pareja francesa de raíces nobles, descendientes de la familia ligada al legendario Romanée-Conti, esta viña boutique es mucho más que un lugar de producción: es un puente entre dos mundos, una historia de amor y legado que se expresa en cada botella."
+    },
+    "mission": {
+        "title": "Misión",
+        "description": "Crear vinos boutique que reflejen la elegancia francesa y la autenticidad chilena, respetando la tierra que guarda la memoria de nuestra familia. A través de un club de vino exclusivo al estilo francés, ofrecemos a nuestros socios experiencias íntimas y memorables, donde el vino se convierte en arte y encuentro."
+    },
+    "vision": {
+        "title": "Visión",
+        "description": "Ser reconocidos como un ícono de vinos de alta gama en Chile, elaborados con el savoir-faire francés y la riqueza incomparable del terroir de Apalta. Queremos que cada copa sea un viaje sensorial que una tradición, cultura y pertenencia."
+    },
+    "winery": {
+        "barrels": "Bodega con barricas de roble"
+    },
+    "values": {
+        "title": "Nuestros Valores",
+        "description": "Nuestra filosofía nace de la tradición vitivinícola y de una visión que une la elegancia francesa con la riqueza del terroir chileno.",
+        "tradition": {
+            "title": "Tradición y legado",
+            "description": "Cada cosecha honra nuestras raíces familiares y la historia del valle de Apalta."
+        },
+        "excellence": {
+            "title": "Excelencia",
+            "description": "Buscamos la perfección en cada detalle, desde el viñedo hasta la copa."
+        },
+        "exclusivity": {
+            "title": "Exclusividad",
+            "description": "Creamos un círculo selecto de amantes del vino, inspirado en los clubes franceses."
+        },
+        "sustainability": {
+            "title": "Sustentabilidad",
+            "description": "Respetamos la tierra y cultivamos con conciencia, preservando el equilibrio natural del viñedo."
+        },
+        "culture": {
+            "title": "Cultura y elegancia",
+            "description": "El vino como expresión artística y cultural que une Francia y Chile."
+        },
+        "family": {
+            "title": "Familia y pertenencia",
+            "description": "Un proyecto nacido del amor y compartido con quienes valoran la pasión por el vino."
+        }
+    },
+    "club": {
+        "brand": "Maison",
+        "name": "Philippe De Conti",
+        "title": "El Club Philippe de Conti",
+        "description": "Más que un club de vinos, es una comunidad. Nuestros socios disfrutan acceso privilegiado a ediciones limitadas, catas privadas y encuentros culturales que celebran la unión de dos tradiciones vitivinícolas. Cada botella es un testimonio de exclusividad y dedicación, pensada para quienes buscan más que un vino: buscan una experiencia.",
+        "comingSoon": "Próximamente Disponible"
+    },
+    "wines": {
+        "title": "Nuestros Vinos",
+        "description": "Maison del Valle de Colchagua representa la unión entre tradición vitivinícola chilena y la elegancia francesa. Cada botella es una obra de arte, elaborada en partidas limitadas, pensada para quienes buscan exclusividad y sofisticación.",
+        "premierCru": "Premier Cru",
+        "closDeConti": "Clos De Conti",
+        "grandCru": "Grand Cru"
+    },
+    "vineyards": {
+        "title": "Nuestros Viñedos",
+        "collection": "Cajas de recolección en Nuestra Señora del Carmen",
+        "chepica": {
+            "location": "Chépica",
+            "name": "Nuestra Señora del Carmen",
+            "description": "Ubicado en el corazón de Chépica, este viñedo es el guardián de nuestras parras centenarias. El microclima único, caracterizado por mañanas brumosas y tardes soleadas, permite una maduración lenta y perfecta.",
+            "description2": "Aquí, el trabajo manual es ley, honrando la herencia de generaciones que han cultivado esta tierra con profundo respeto."
+        },
+        "peralillo": {
+            "location": "Peralillo",
+            "name": "El Olivar",
+            "description": "En las laderas pedregosas de Peralillo, El Olivar desafía la resiliencia de la vid. Los suelos pobres y bien drenados obligan a las raíces a buscar profundidad, extrayendo una mineralidad inconfundible.",
+            "description2": "El resultado son racimos pequeños y concentrados, la esencia misma del esfuerzo y la adaptación al terroir extremo."
+        },
+        "apalta": {
+            "location": "Santa Cruz",
+            "name": "Apalta",
+            "description": "El legendario terroir de Apalta, un anfiteatro natural que protege las vides y concentra el calor del sol. Aquí nacen nuestros vinos más emblemáticos, de una estructura y elegancia superiores.",
+            "description2": "La vendimia manual, meticulosa y silenciosa, asegura que solo los racimos perfectos lleguen a nuestra bodega, preservando la pureza de cada grano."
+        },
+        "images": {
+            "collection": "Cajas de recolección en Nuestra Señora del Carmen",
+            "elOlivar": "Viñedo El Olivar",
+            "harvest": "Cosecha manual en Apalta",
+            "winery": "Viña Philippe de Conti"
+        }
+    },
+    "contact": {
+        "title": "Contáctanos",
+        "callUs": "Llámanos",
+        "phone": "+56 9 74960034",
+        "locationTitle": "Estamos ubicados en:",
+        "address": "Calle Millahue de Apalta, kilómetro 7.7, comuna de Santa Cruz, Sexta Región",
+        "socialMedia": "Redes Sociales"
+    },
+    "footer": {
+        "terms": "Términos & condiciones",
+        "privacy": "Política de privacidad",
+        "copyright": "©2026 - Viña Philippe de Conti",
+        "rights": "TODOS LOS DERECHOS RESERVADOS",
+        "trademark": "\"Viña Philippe de Conti\" es una marca registrada de Viña Philippe de Conti SpA"
+    }
+}

@@ -1,9 +1,16 @@
 import { Component, ElementRef, ViewChild, AfterViewInit, OnDestroy, HostListener } from '@angular/core';
+
+import { TranslatePipe } from '@ngx-translate/core';
+
+import { TranslateService } from '@ngx-translate/core';
+
+import { LanguageService } from './../../services/languague';
+
 import { gsap } from "gsap";
 
 @Component({
   selector: 'app-navbar',
-  imports: [],
+  imports: [TranslatePipe],
   templateUrl: './navbar.html',
   styleUrl: './navbar.css',
 })
@@ -13,6 +20,8 @@ export class Navbar implements AfterViewInit {
   ctx!: gsap.Context;
   tl!: GSAPTimeline;
   open = false;
+
+  idiomaActual = localStorage.getItem('idioma') || 'es';
 
   @HostListener('window:scroll', [])
   onWindowScroll(): void {
@@ -44,6 +53,13 @@ export class Navbar implements AfterViewInit {
 
 
 
+  }
+
+  constructor(private Languague: LanguageService) { }
+
+  cambiarIdioma(idioma: 'es' | 'fr') {
+    this.Languague.cambiarIdioma(idioma);
+    this.idiomaActual = idioma;
   }
 
   toggleMenu() {

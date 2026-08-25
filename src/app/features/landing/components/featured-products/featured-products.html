@@ -3,7 +3,9 @@
     <h2 class="flex items-center mb-5">
         <span class="h-px flex-1 bg-linear-to-r from-transparent to-rose-300"></span>
 
-        <span class="shrink-0 px-4 text-4xl md:text-5xl  font-body text-rose-800 text-center">Nuestros Vinos</span>
+        <span class="shrink-0 px-4 text-4xl md:text-5xl  font-body text-rose-800 text-center">
+            {{ 'wines.title' | translate }}
+        </span>
 
         <span class="h-px flex-1 bg-linear-to-l from-transparent to-rose-300"></span>
     </h2>
@@ -21,11 +23,7 @@
     </div> -->
     <div class=" my-5 lg:w-1/2 mx-auto">
         <p class="text-base md:text-lg leading-relaxed text-gray-700 font-light">
-            Maison del Valle de Colchagua representa la unión entre tradición vitivinícola chilena y la elegancia
-            francesa.
-            Cada botella es una obra de arte,
-            elaborada en partidas limitadas,
-            pensada para quienes buscan exclusividad y sofisticación
+            {{ 'wines.description' | translate }}
         </p>
     </div>
     <app-carousel class="md:hidden" />

@@ -1,16 +1,37 @@
 <nav class="hidden text-white  fixed w-full top-0 h-20 z-20 items-center md:flex justify-center  bg-zinc-800">
     <ul class="flex w-72 justify-center text-xl space-x-6 text-white/80 ">
-        <li class="hover:text-white hover:underline underline-offset-10 cursor-pointer " id="historia">Historia</li>
-        <li class="hover:text-white hover:underline underline-offset-10 cursor-pointer " id="valores">Valores</li>
+        <li class="hover:text-white hover:underline underline-offset-10 cursor-pointer " id="historia">
+            {{ 'nav.history' | translate }}
+        </li>
+        <li class="hover:text-white hover:underline underline-offset-10 cursor-pointer " id="valores">
+            {{ 'nav.values' | translate }}
+        </li>
     </ul>
     <li class="font-behrens text-2xl font-medium text-center mx-8 cursor-pointer list-none " id="inicio">
         Philippe de
         Conti</li>
     <ul class="flex w-72 justify-center text-xl space-x-6 text-white/80">
-        <li class="hover:text-white hover:underline underline-offset-10 cursor-pointer" id="club">Club</li>
-        <li class="hover:text-white hover:underline underline-offset-10 cursor-pointer " id="vinos">Vinos</li>
-        <li class="hover:text-white hover:underline underline-offset-10 cursor-pointer " id="vinedo">Viñedos</li>
+        <li class="hover:text-white hover:underline underline-offset-10 cursor-pointer" id="club">
+            {{ 'nav.club' | translate }}
+        </li>
+        <li class="hover:text-white hover:underline underline-offset-10 cursor-pointer " id="vinos">
+            {{ 'nav.wines' | translate }}
+        </li>
+        <li class="hover:text-white hover:underline underline-offset-10 cursor-pointer " id="vinedo">
+            {{ 'nav.vineyards' | translate }}
+        </li>
+
+
     </ul>
+
+    <div class="absolute right-5 flex space-x-4 z-30">
+        <img src="espana.png" class="h-10 cursor-pointer" [class.font-bold]="idiomaActual === 'es'"
+            [class.opacity-100]="idiomaActual === 'es'" [class.opacity-50]="idiomaActual !== 'es'"
+            (click)="cambiarIdioma('es')" />
+        <img src="francia.png" class="h-10 cursor-pointer" [class.font-bold]="idiomaActual === 'fr'"
+            [class.opacity-100]="idiomaActual === 'fr'" [class.opacity-50]="idiomaActual !== 'fr'"
+            (click)="cambiarIdioma('fr')" />
+    </div>
 </nav>
 
 <div
@@ -21,11 +42,21 @@
     </div>
     <nav #menu class="top-18 fixed z-10 bg-black/80 text-white/60 backdrop-blur-2xl w-full md:hidden" id="mobile-menu">
         <ul class="flex flex-col items-center text-lg " (click)="toggleMenu()">
-            <li class="py-2 hover:text-white cursor-pointer item" id="inicio">Inicio</li>
-            <li class="py-2 hover:text-white cursor-pointer item" id="historia">Nosotros</li>
-            <li class="py-2 hover:text-white cursor-pointer item" id="club">Club</li>
-            <li class="py-2 hover:text-white cursor-pointer item" id="vinos">Vinos</li>
-            <li class="py-2 hover:text-white cursor-pointer item" id="vinedo">Viñedos</li>
+            <li class="py-2 hover:text-white cursor-pointer item" id="inicio">Philippe de
+                Conti</li>
+            <li class="py-2 hover:text-white cursor-pointer item" id="historia">{{ 'nav.history' | translate }}</li>
+            <li class="py-2 hover:text-white cursor-pointer item" id="club">{{ 'nav.club' | translate }}</li>
+            <li class="py-2 hover:text-white cursor-pointer item" id="vinos">{{ 'nav.wines' | translate }}</li>
+            <li class="py-2 hover:text-white cursor-pointer item" id="vinedo">{{ 'nav.vineyards' | translate }}</li>
         </ul>
     </nav>
+
+    <div class="absolute left-5 flex space-x-4 z-30">
+        <img src="espana.png" class="h-8 cursor-pointer" [class.font-bold]="idiomaActual === 'es'"
+            [class.opacity-100]="idiomaActual === 'es'" [class.opacity-50]="idiomaActual !== 'es'"
+            (click)="cambiarIdioma('es')" />
+        <img src="francia.png" class="h-8 cursor-pointer" [class.font-bold]="idiomaActual === 'fr'"
+            [class.opacity-100]="idiomaActual === 'fr'" [class.opacity-50]="idiomaActual !== 'fr'"
+            (click)="cambiarIdioma('fr')" />
+    </div>
 </div>

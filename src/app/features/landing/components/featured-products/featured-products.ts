@@ -3,9 +3,11 @@ import { Carousel } from '../../../../shared/carousel/carousel';
 import { Router, RouterLink } from '@angular/router';
 import vinos from '../../../../../assets/db.json';
 
+import { TranslatePipe } from '@ngx-translate/core';
+
 @Component({
   selector: 'app-featured-products',
-  imports: [Carousel, RouterLink],
+  imports: [Carousel, RouterLink, TranslatePipe],
   templateUrl: './featured-products.html',
   styleUrl: './featured-products.css',
 })

@@ -9,12 +9,12 @@
                 <h1 class="text-center text-5xl md:text-[120px] mb-6 font-melodrama  leading-none" id="hero-title">
                     Viña <br><span class="font-behrens">Philippe de Conti</span></h1>
                 <p class="mb-6 text-xl text-center text-white/80 text-" id="hero-subTitle">
-                    Donde Francia y Chile se encuentran en una copa
+                    {{ 'hero.subtitle' | translate }}
                 </p>
                 <div id="hero-button">
                     <button (click)="scrollButton()"
                         class="bg-rose-700/80 border border-white  text-white text-xl p-3  w-60 mx-auto hover:scale-105 active:scale-95 cursor-pointer transition-all">
-                        Descúbrenos
+                        {{ 'hero.button' | translate }}
                     </button>
                 </div>
             </div>
@@ -25,20 +25,14 @@
             <div class="p-6 lg:p-0 md:flex-1 flex flex-col md:justify-center items-center  md:h-120  w-full">
                 <h2 class="text-4xl md:text-5xl text-left md:text-center mb-6 md:mb-10 club-banner text-rose-900 font font-body"
                     id="history-title">
-                    Nuestra Historia
+                    {{ 'history.title' | translate }}
                 </h2>
                 <div class="lg:px-10" id="history-text">
                     <p class="font-body text-lg text-justify text-black/60 text-balance ">
-                        En el corazón de Apalta, Santa Cruz, una tierra bañada por el sol y acariciada por los vientos
-                        del valle de
-                        Colchagua, nace un proyecto único: Dufour de Conti.
+                        {{ 'history.paragraph1' | translate }}
                     </p>
                     <p class="font-body text-lg text-justify text-black/60 text mt-4">
-                        Fundada por una pareja francesa de raíces nobles, descendientes de la familia ligada al
-                        legendario Romanée-Conti,
-                        esta viña boutique es mucho más que un lugar de producción: es un puente entre dos mundos, una
-                        historia de
-                        amor y legado que se expresa en cada botella.
+                        {{ 'history.paragraph2' | translate }}
                     </p>
                 </div>
             </div>
@@ -77,15 +71,11 @@
                 <div class="flex flex-col  justify-center lg:px-10 ">
                     <h2 class="text-4xl md:text-5xl text-left md:text-center mb-6 club-banner text-rose-900 font font-body text-balance"
                         id="history-title">
-                        Misión
+                        {{ 'mission.title' | translate }}
                     </h2>
 
                     <p class="font-body text-lg text-justify text-black/60 mb-6">
-                        Crear vinos boutique que reflejen la elegancia francesa y la autenticidad chilena,
-                        respetando la tierra que guarda la memoria de nuestra familia.
-                        A través de un club de vino exclusivo al estilo francés,
-                        ofrecemos a nuestros socios experiencias íntimas y memorables,
-                        donde el vino se convierte en arte y encuentro.
+                        {{ 'mission.description' | translate }}
                     </p>
                 </div>
                 <img src="image-vina-2.webp" alt="" class=" lg:w-1/2">
@@ -96,13 +86,11 @@
                 <div class="flex flex-col  justify-center  lg:px-10 lg:w-1/2 ">
                     <h2 class="text-4xl md:text-5xl text-left md:text-center mb-6 club-banner text-rose-900 font font-body"
                         id="history-title">
-                        Visión
+                        {{ 'vision.title' | translate }}
                     </h2>
 
                     <p class="font-body text-lg text-justify text-black/60 mb-6">
-                        Ser reconocidos como un ícono de vinos de alta gama en Chile,
-                        elaborados con el savoir-faire francés y la riqueza incomparable del terroir de Apalta.
-                        Queremos que cada copa sea un viaje sensorial que una tradición, cultura y pertenencia.
+                        {{ 'vision.description' | translate }}
                     </p>
                 </div>
                 <div class=" h-full lg:w-1/2">
@@ -111,99 +99,97 @@
             </div>
         </div>
 
-        <section class="lg:h-screen pt-32 pb-10 lg:pt-0 lg:pb-0 flex flex-col lg:flex-row w-full  ">
+        <section class="lg: pt-30 pb-10 lg:pt-0 lg:pb-0 flex flex-col lg:flex-row w-full  ">
             <div class="lg:w-1/2 bg-amber-800">
                 <div class=" bg-black/40 lg:hidden z-10"></div>
                 <img alt="Bodega con barricas de roble" class="hidden md:flex w-full h-full object-cover  lg:w-full"
                     src="image-vina-4.webp" />
             </div>
 
-            <div class="lg:w-1/2 mx-auto text-center p-10" id="valores1">
+            <div class="lg:w-1/2 mx-auto text-center p-10 " id="valores1">
 
                 <h2 class="text-4xl md:text-5xl font-body text-rose-900 mb-6">
-                    Nuestros Valores
+                    {{ 'values.title' | translate }}
                 </h2>
 
                 <p class="max-w-2xl mx-auto text-gray-600 mb-16 text-lg ">
-                    Nuestra filosofía nace de la tradición vitivinícola y de una visión que une
-                    la elegancia francesa con la riqueza del terroir chileno.
+                    {{ 'values.description' | translate }}
                 </p>
 
                 <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-2 ">
 
                     <!-- Valor -->
-                    <div class="value-item h-44">
+                    <div class="value-item max-h-60 ">
                         <div
-                            class="bg-white  rounded-lg shadow-md hover:shadow-xl transition duration-300 hover:-translate-y-2 h-38 relative">
+                            class="bg-white   rounded-lg shadow-md hover:shadow-xl transition duration-300 hover:-translate-y-2 max-h-60 relative">
                             <div class="bg-black/80 w-full h-full absolute z-10 rounded-2xl hidden"></div>
                             <img src="tradicion.png" alt="" class=" w-full h-full absolute object-cover hidden ">
                             <div class="z-10 relative p-8">
                                 <h3 class="text-xl font-semibold text-rose-900 mb-3">
-                                    Tradición y legado
+                                    {{ 'values.tradition.title' | translate }}
                                 </h3>
                                 <p class="text-gray-600">
-                                    Cada cosecha honra nuestras raíces familiares y la historia del valle de Apalta.
+                                    {{ 'values.tradition.description'| translate }}
                                 </p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="value-item h-44">
+                    <div class="value-item max-h-60">
                         <div
                             class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300 hover:-translate-y-2 ">
                             <h3 class="text-xl font-semibold text-rose-900 mb-3">
-                                Excelencia
+                                {{ 'values.excellence.title' | translate }}
                             </h3>
                             <p class="text-gray-600">
-                                Buscamos la perfección en cada detalle, desde el viñedo hasta la copa.
+                                {{ 'values.excellence.description' | translate }}
                             </p>
                         </div>
                     </div>
 
-                    <div class="value-item h-44">
+                    <div class="value-item max-h-60">
                         <div
                             class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300 hover:-translate-y-2">
                             <h3 class="text-xl font-semibold text-rose-900 mb-3">
-                                Exclusividad
+                                {{ 'values.exclusivity.title' | translate }}
                             </h3>
                             <p class="text-gray-600">
-                                Creamos un círculo selecto de amantes del vino, inspirado en los clubes franceses.
+                                {{ 'values.exclusivity.description' | translate }}
                             </p>
                         </div>
                     </div>
-                    <div class="value-item h-44">
+                    <div class="value-item max-h-60">
                         <div
                             class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300 hover:-translate-y-2">
                             <h3 class="text-xl font-semibold text-rose-900 mb-3">
-                                Sustentabilidad
+                                {{ 'values.sustainability.title' | translate }}
                             </h3>
                             <p class="text-gray-600">
-                                Respetamos la tierra y cultivamos con conciencia, preservando el equilibrio natural del
-                                viñedo.
+                                {{ 'values.sustainability.description' | translate }}
                             </p>
                         </div>
                     </div>
 
-                    <div class="value-item h-44 ">
+                    <div class="value-item max-h-60 ">
                         <div
                             class="bg-white h-full p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300 hover:-translate-y-2">
                             <h3 class="text-xl font-semibold text-rose-900 mb-3">
-                                Cultura y elegancia
+                                {{ 'values.culture.title' | translate }}
                             </h3>
                             <p class="text-gray-600">
-                                El vino como expresión artística y cultural que une Francia y Chile.
+                                {{ 'values.culture.description' | translate }}
                             </p>
                         </div>
                     </div>
 
-                    <div class="value-item h-44">
+                    <div class="value-item max-h-60">
                         <div
                             class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300 hover:-translate-y-2 h-full">
                             <h3 class="text-xl font-semibold text-rose-900 mb-3">
-                                Familia y pertenencia
+                                {{ 'values.family.title' | translate }}
                             </h3>
                             <p class="text-gray-600">
-                                Un proyecto nacido del amor y compartido con quienes valoran la pasión por el vino.
+                                {{ 'values.family.description' | translate }}
                             </p>
                         </div>
                     </div>
@@ -226,19 +212,15 @@
                 <p class="font-behrens text-6xl text-amber-600/70">Philippe De Conti</p>
             </div>
             <div class="space-y-8  p-12 justify-center flex flex-col w-full">
-                <h2 class="text-3xl  font-body text-amber-100 lg:text-4xl">El Club Philippe de Conti</h2>
+                <h2 class="text-3xl  font-body text-amber-100 lg:text-4xl">
+                    {{ 'club.title' | translate }}
+                </h2>
                 <p class="text-lg md:text-lg lg:text-lg font-body text-justify text-amber-50">
-                    Más que un club de vinos, es una comunidad. Nuestros socios disfrutan acceso privilegiado a
-                    ediciones
-                    limitadas, catas privadas y
-                    encuentros culturales que celebran la unión de dos tradiciones vitivinícolas.
-                    Cada botella es un testimonio de exclusividad y dedicación, pensada para quienes buscan más que un
-                    vino:
-                    buscan una experiencia.
+                    {{ 'club.description' | translate }}
                 </p>
                 <button
                     class="p-4 bg-amber-100 text-black text-xl  font-body border border-rose-800 hover:bg-rose-900 hover:text-white transition-all cursor-pointer">
-                    Proximamente Disponible
+                    {{ 'club.comingSoon' | translate }}
                 </button>
             </div>
         </section>
@@ -248,5 +230,10 @@
 
         <app-footer />
     </div>
+
+    <a href="https://wa.me/56974960034" target="_blank" rel="noopener noreferrer">
+        <img src="whatsapp.png" class="fixed bottom-10 right-10 h-16 hover:scale-105 transition-all cursor-pointer"
+            alt="">
+    </a>
 
 </section>

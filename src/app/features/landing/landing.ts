@@ -9,9 +9,11 @@ import { ScrollSmoother } from 'gsap/ScrollSmoother';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import SplitText from 'gsap/SplitText';
 
+import { TranslatePipe } from '@ngx-translate/core';
+
 @Component({
   selector: 'app-landing',
-  imports: [Footer, FeaturedProducts, Vineyards, Navbar],
+  imports: [Footer, FeaturedProducts, Vineyards, Navbar, TranslatePipe],
   templateUrl: './landing.html',
   styleUrl: './landing.css',
 })

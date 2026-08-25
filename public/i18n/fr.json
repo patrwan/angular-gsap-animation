@@ -1,0 +1,116 @@
+{
+    "nav": {
+        "history": "Histoire",
+        "values": "Valeurs",
+        "club": "Club",
+        "wines": "Vins",
+        "vineyards": "Vignobles",
+        "contact": "Contact"
+    },
+    "hero": {
+        "title": "Viña Philippe de Conti",
+        "subtitle": "Là où la France et le Chili se rencontrent dans un verre",
+        "button": "Découvrez-nous"
+    },
+    "history": {
+        "title": "Notre Histoire",
+        "paragraph1": "Au cœur d’Apalta, à Santa Cruz, une terre baignée de soleil et caressée par les vents de la vallée de Colchagua, naît un projet unique : Dufour de Conti.",
+        "paragraph2": "Fondée par un couple français aux nobles racines, descendants de la famille liée au légendaire Romanée-Conti, cette maison viticole boutique est bien plus qu’un lieu de production : c’est un pont entre deux mondes, une histoire d’amour et d’héritage qui s’exprime dans chaque bouteille."
+    },
+    "mission": {
+        "title": "Mission",
+        "description": "Créer des vins de boutique qui reflètent l’élégance française et l’authenticité chilienne, dans le respect de la terre qui porte la mémoire de notre famille. À travers un club de vin exclusif inspiré du style français, nous offrons à nos membres des expériences intimes et mémorables, où le vin devient art et rencontre."
+    },
+    "vision": {
+        "title": "Vision",
+        "description": "Être reconnus comme une référence des vins haut de gamme au Chili, élaborés avec le savoir-faire français et la richesse incomparable du terroir d’Apalta. Nous souhaitons que chaque verre soit un voyage sensoriel qui unit tradition, culture et appartenance."
+    },
+    "winery": {
+        "barrels": "Chai avec fûts de chêne"
+    },
+    "values": {
+        "title": "Nos Valeurs",
+        "description": "Notre philosophie naît de la tradition viticole et d’une vision qui unit l’élégance française à la richesse du terroir chilien.",
+        "tradition": {
+            "title": "Tradition et héritage",
+            "description": "Chaque vendange honore nos racines familiales et l’histoire de la vallée d’Apalta."
+        },
+        "excellence": {
+            "title": "Excellence",
+            "description": "Nous recherchons la perfection dans chaque détail, de la vigne au verre."
+        },
+        "exclusivity": {
+            "title": "Exclusivité",
+            "description": "Nous créons un cercle privilégié d’amateurs de vin, inspiré des clubs français."
+        },
+        "sustainability": {
+            "title": "Durabilité",
+            "description": "Nous respectons la terre et cultivons avec conscience, en préservant l’équilibre naturel du vignoble."
+        },
+        "culture": {
+            "title": "Culture et élégance",
+            "description": "Le vin comme expression artistique et culturelle qui unit la France et le Chili."
+        },
+        "family": {
+            "title": "Famille et appartenance",
+            "description": "Un projet né de l’amour et partagé avec ceux qui apprécient la passion du vin."
+        }
+    },
+    "club": {
+        "brand": "Maison",
+        "name": "Philippe De Conti",
+        "title": "Le Club Philippe de Conti",
+        "description": "Plus qu’un club de vin, c’est une communauté. Nos membres bénéficient d’un accès privilégié à des éditions limitées, des dégustations privées et des rencontres culturelles célébrant l’union de deux traditions viticoles. Chaque bouteille témoigne de l’exclusivité et du dévouement, pensée pour ceux qui recherchent plus qu’un vin : une véritable expérience.",
+        "comingSoon": "Prochainement Disponible"
+    },
+    "wines": {
+        "title": "Nos Vins",
+        "description": "Maison de la Vallée de Colchagua représente l’union entre la tradition viticole chilienne et l’élégance française. Chaque bouteille est une œuvre d’art, élaborée en quantités limitées et pensée pour ceux qui recherchent exclusivité et sophistication.",
+        "premierCru": "Premier Cru",
+        "closDeConti": "Clos De Conti",
+        "grandCru": "Grand Cru"
+    },
+    "vineyards": {
+        "title": "Nos Vignobles",
+        "collection": "Caisses de récolte à Nuestra Señora del Carmen",
+        "chepica": {
+            "location": "Chépica",
+            "name": "Nuestra Señora del Carmen",
+            "description": "Situé au cœur de Chépica, ce vignoble est le gardien de nos vignes centenaires. Son microclimat unique, caractérisé par des matinées brumeuses et des après-midis ensoleillés, permet une maturation lente et parfaite.",
+            "description2": "Ici, le travail manuel est une règle, honorant l’héritage de générations qui ont cultivé cette terre avec un profond respect."
+        },
+        "peralillo": {
+            "location": "Peralillo",
+            "name": "El Olivar",
+            "description": "Sur les pentes pierreuses de Peralillo, El Olivar met à l’épreuve la résilience de la vigne. Les sols pauvres et bien drainés obligent les racines à chercher la profondeur, puisant une minéralité incomparable.",
+            "description2": "Le résultat donne des grappes petites et concentrées, essence même de l’effort et de l’adaptation à un terroir extrême."
+        },
+        "apalta": {
+            "location": "Santa Cruz",
+            "name": "Apalta",
+            "description": "Le légendaire terroir d’Apalta, un amphithéâtre naturel qui protège les vignes et concentre la chaleur du soleil. C’est ici que naissent nos vins les plus emblématiques, dotés d’une structure et d’une élégance supérieures.",
+            "description2": "Les vendanges manuelles, méticuleuses et silencieuses, garantissent que seuls les raisins parfaits parviennent à notre chai, préservant ainsi la pureté de chaque grain."
+        },
+        "images": {
+            "collection": "Caisses de récolte à Nuestra Señora del Carmen",
+            "elOlivar": "Vignoble El Olivar",
+            "harvest": "Vendange manuelle à Apalta",
+            "winery": "Viña Philippe de Conti"
+        }
+    },
+    "contact": {
+        "title": "Contactez-nous",
+        "callUs": "Appelez-nous",
+        "phone": "+56 9 74960034",
+        "locationTitle": "Nous sommes situés à :",
+        "address": "Calle Millahue de Apalta, kilomètre 7,7, commune de Santa Cruz, Sixième Région",
+        "socialMedia": "Réseaux sociaux"
+    },
+    "footer": {
+        "terms": "Termes et conditions",
+        "privacy": "Politique de confidentialité",
+        "copyright": "©2026 - Viña Philippe de Conti",
+        "rights": "TOUS DROITS RÉSERVÉS",
+        "trademark": "\"Viña Philippe de Conti\" est une marque déposée de Viña Philippe de Conti SpA"
+    }
+}
