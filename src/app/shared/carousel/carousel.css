@@ -42,9 +42,9 @@
 
 /* Imagen siempre llena su contenedor */
 .slide-image img {
-    width: 300px;
+    width: 150px;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     /* escala sin deformar */
 }
 
