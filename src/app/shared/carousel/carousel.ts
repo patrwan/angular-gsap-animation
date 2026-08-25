@@ -34,7 +34,7 @@ export class Carousel implements OnInit {
     },
     {
       id: 3,
-      imageSrc: "wines/wine-grand-cru.webp",
+      imageSrc: "wines/wine-grand-cru-2.png",
       imageAlt: "",
       title: "Grand Cru",
       description: ""
