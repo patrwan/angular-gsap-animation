@@ -57,6 +57,11 @@
 }
 
 /* Opcional: animar aparición del texto */
+
+.title {
+    font-size: 24px;
+}
+
 .title,
 .description {
     opacity: 0;
