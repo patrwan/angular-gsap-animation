@@ -1,4 +1,4 @@
-<nav class="hidden text-white  fixed w-full top-0 h-20 z-20 items-center md:flex justify-center  bg-zinc-800">
+<nav class="hidden text-white  fixed w-full top-0 h-20 z-20 items-center lg:flex justify-center  bg-zinc-800">
     <ul class="flex w-72 justify-center text-xl space-x-6 text-white/80 ">
         <li class="hover:text-white hover:underline underline-offset-10 cursor-pointer " id="historia">
             {{ 'nav.history' | translate }}
@@ -35,7 +35,7 @@
 </nav>
 
 <div
-    class="w-full flex h-18 fixed z-20 text-white items-center justify-center md:hidden bg-black/80 backdrop-blur-2xl nav">
+    class="w-full flex h-18 fixed z-20 text-white items-center justify-center lg:hidden bg-black/80 backdrop-blur-2xl nav">
     <h1 class="font-melodrama text-2xl font-medium text-center mr-4">Philippe de Conti</h1>
     <div class="absolute z-30 right-2 h-10  flex items-center ">
         <img src="menu.svg" alt="" class="w-10 h-10  relative z-40" (click)="toggleMenu()">
@@ -51,7 +51,7 @@
         </ul>
     </nav>
 
-    <div class="absolute left-5 flex space-x-4 z-30">
+    <div class="absolute left-1 flex space-x-2 z-30">
         <img src="espana.png" class="h-8 cursor-pointer" [class.font-bold]="idiomaActual === 'es'"
             [class.opacity-100]="idiomaActual === 'es'" [class.opacity-50]="idiomaActual !== 'es'"
             (click)="cambiarIdioma('es')" />

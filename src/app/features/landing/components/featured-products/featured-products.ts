@@ -14,6 +14,9 @@ import { TranslatePipe } from '@ngx-translate/core';
 export class FeaturedProducts implements AfterViewInit {
 
   productos = vinos;
+  flag = [
+    { "id": 1 }, { "id": 2 }, { "id": 3 }
+  ]
 
   ngAfterViewInit(): void {
     /* gsap.from('.product-item', {

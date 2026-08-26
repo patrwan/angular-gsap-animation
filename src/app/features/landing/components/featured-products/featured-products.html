@@ -1,5 +1,4 @@
-<section class="w-full  md:px-32 grid  text-center place-content-center space-y-3  py-12 lg: product-container"
-    id="vinos1">
+<section class="w-full  md:px-32   text-center  space-y-3  py-12 lg: product-container flex flex-col" id="vinos1">
     <h2 class="flex items-center mb-5">
         <span class="h-px flex-1 bg-linear-to-r from-transparent to-rose-300"></span>
 
@@ -58,23 +57,34 @@
 
 
 
-    <div class="md:flex md:w-3xl lg:w-full justify-center hidden  text-black space-x-2 product-container">
+    <div
+        class="md:flex flex-col items-center md:w-3xl lg:w-full justify-center hidden  text-black space-x-2 product-container">
 
-
-
-        @for(producto of productos; track producto.id; let i = $index){
-        <div class="product-item cursor-pointer">
-            <div class="flex w-66.5 h-157.5 p-2 flex-col items-center " [class.bg-blue-500]="i === 0"
-                [class.bg-white]="i === 1" [class.bg-red-500]="i === 2">
-                <img [src]="producto.image" alt=""
-                    class=" mt-10 w-25 h-100 hover:scale-110 transition-all drop-shadow-[0_0_15px_#fbbf24]"
-                    [class.drop-shadow-[0_0_15px_#fbbf24]]="i === 1">
-                <h3 class="mt-10 text-2xl uppercase font-neuton" [class.text-white]="i !== 1"
-                    [class.text-black]="i === 1">{{producto.short_name}}</h3>
-                <!-- <a class="mt-6 cursor-pointer" [routerLink]="['/vinos', producto?.id]">Ver Más</a> -->
+        <div class="flex mb-10">
+            @for(producto of productos; track producto.id; let i = $index){
+            <div class="cursor-pointer hover:bg-zinc-900 hover:text-white transition-all">
+                <div class="flex w-66.5 h-157.5 p-2 flex-col items-center ">
+                    <img [src]="producto.image" alt="" class=" mt-10 w-25 h-100 hover:scale-110 transition-all">
+                    <h3 class="mt-10 text-2xl uppercase font-neuton">{{producto.short_name}}</h3>
+                    <!-- <a class="mt-6 cursor-pointer" [routerLink]="['/vinos', producto?.id]">Ver Más</a> -->
+                    <p></p>
+                </div>
             </div>
+            }
         </div>
-        }
+
+        <div class="flex">
+            @for(flags of flag; track flags.id; let i = $index){
+            <div class="product-item cursor-pointer">
+                <div class="flex w-66.5 h-157.5 p-2 flex-col items-center " [class.bg-blue-500]="i === 0"
+                    [class.bg-white]="i === 1" [class.bg-red-500]="i === 2">
+
+                    <!-- <a class="mt-6 cursor-pointer" [routerLink]="['/vinos', producto?.id]">Ver Más</a> -->
+                </div>
+            </div>
+            }
+        </div>
+
     </div>
 
     <!--     <div class="md:flex md:w-3xl lg:w-full justify-center hidden  text-black space-x-2">

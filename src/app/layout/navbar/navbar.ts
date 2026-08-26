@@ -1,5 +1,7 @@
 import { Component, ElementRef, ViewChild, AfterViewInit, OnDestroy, HostListener } from '@angular/core';
 
+import { Router } from '@angular/router';
+
 import { TranslatePipe } from '@ngx-translate/core';
 
 import { TranslateService } from '@ngx-translate/core';
@@ -55,11 +57,12 @@ export class Navbar implements AfterViewInit {
 
   }
 
-  constructor(private Languague: LanguageService) { }
+  constructor(private Languague: LanguageService, private router: Router) { }
 
   cambiarIdioma(idioma: 'es' | 'fr') {
     this.Languague.cambiarIdioma(idioma);
     this.idiomaActual = idioma;
+    //this.router.navigate(['/' + idioma]);
   }
 
   toggleMenu() {

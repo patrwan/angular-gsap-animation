@@ -6,13 +6,13 @@
 
         <!-- Imagen -->
         <div class="slide-image">
-            <img src={{image.imageSrc}} alt="" class="image-active">
+            <img src={{image.image}} alt="" class="image-active">
         </div>
 
         <!-- Texto -->
         <div class="slide-text">
             <h3 class="text-3xl mb-2 font-bold text-black" [ngClass]="{'title-active': selectedIndex === i}">
-                {{image.title}}
+                {{image.short_name}}
             </h3>
             <p class="text-gray-800" [ngClass]="{'description-active': selectedIndex === i}">
                 {{image.description}}

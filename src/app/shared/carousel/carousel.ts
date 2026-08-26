@@ -1,13 +1,18 @@
 import { NgClass } from '@angular/common';
 import { Component, Input, OnInit } from '@angular/core';
 
+import vinos from '../../../../src/assets/db.json';
+
 interface carouselImage {
   id: number,
-  imageSrc: string;
-  imageAlt: string;
-  title: string;
+  name: string;
+  short_name: string;
   description: string;
+  image: string;
+  detail_image: string
 }
+
+
 
 @Component({
   selector: 'app-carousel',
@@ -17,30 +22,7 @@ interface carouselImage {
 })
 export class Carousel implements OnInit {
 
-  @Input() images: carouselImage[] = [
-    {
-      id: 1,
-      imageSrc: "wines/wine-closdeconti.webp",
-      imageAlt: "",
-      title: "Clos de Conti",
-      description: ""
-    },
-    {
-      id: 2,
-      imageSrc: "wines/wine-premier-cru.webp",
-      imageAlt: "",
-      title: "Premier Cru",
-      description: ""
-    },
-    {
-      id: 3,
-      imageSrc: "wines/wine-grand-cru-2.png",
-      imageAlt: "",
-      title: "Grand Cru",
-      description: ""
-    }
-
-  ];
+  @Input() images: carouselImage[] = vinos
   @Input() indicators = true;
 
   @Input() controls = true;
